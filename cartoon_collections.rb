@@ -15,12 +15,11 @@ end
 def long_planeteer_calls(array)
   array.each do |element|
     count = element.count
-    if count > 5
-      false
-    else
-      true 
+    if count < 5
+      return true 
     end 
   end
+  false 
 end
 
 def find_the_cheese# code an argument here
