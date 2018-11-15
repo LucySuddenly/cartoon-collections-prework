@@ -26,7 +26,7 @@ def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   counter = 0
   array.each do |element|
-    element.include?(cheese_types[0], cheese_types[1], cheese_types[2])
+    element.include?(cheese_types[0] || cheese_types[1] || cheese_types[2])
     counter += 1
   end 
 end
