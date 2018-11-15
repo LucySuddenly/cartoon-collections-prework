@@ -14,7 +14,7 @@ end
 
 def long_planeteer_calls(array)
   array.each do |element|
-    length = element.count
+    length = element.length
     if length < 5
       return true 
     end 
